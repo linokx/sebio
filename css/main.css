@@ -1,0 +1,876 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    -vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   html *{
+    vertical-align: top;
+   }
+
+    h1,h2,h3{
+        margin: 0;
+        margin-bottom: 1em;
+    }
+    .full{
+        width: 100%;
+    }
+    p{
+
+        font-size: 13px;
+    }
+    p:first-child{
+        margin-top: 0;
+    }
+html{
+    background: -webkit-radial-gradient(center bottom, lime 0%, green 100%);
+    background: -moz-radial-gradient(center bottom, chartreuse 0%, darkgreen 90%);
+    -background: green -moz-linear-gradient(left,green,gold, lawngreen, green);
+    background: -ms-radial-gradient(center top, chartreuse 0%, blue 100%);
+    background: -o-radial-gradient(center top, greenyellow 0%, blue 100%);
+    background: #EEE;
+
+}
+body{
+    -background: url(http://www.chloro-galilee.com/images/plante.png) 115% bottom no-repeat;
+}
+#bandeau_header{
+    -background: darkgoldenrod -moz-linear-gradient(top,darkgoldenrod,goldenrod);
+    -border-bottom: 1px darkgoldenrod solid;
+    -box-shadow: 0 0 2px rgba('0,0,0,.2');
+    position: relative;
+    text-align: center;
+    z-index: 1000;
+    background: white;
+
+}
+    #bandeau_header .lien_haut{
+        min-width: 221px;
+        display: inline-block;
+        text-align: right;
+    }
+    #bandeau_header .lien_haut a{
+        text-decoration: none;
+        margin-top: 5px;
+        line-height: 40px;
+        padding: 0 10px;
+        color: green;
+        font-weight: 400;
+        display: inline-block;
+    }
+    #bandeau_header span a:hover{
+        text-decoration: underline;
+    }
+header{
+    display: inline-block;
+    width: 250px;
+    text-align: left;
+    margin: 15px 10px -5px;
+}
+header h1{
+    margin-bottom: 0;
+}
+    header h1 a{
+        font-size: 36px;
+        display: block;
+        color: black;
+        text-decoration: none;
+        width: 240px;
+    }
+    header h1 span{
+        font-size: 12px;
+        vertical-align: bottom;
+        height: 36px;
+        display: none;
+    }
+    header h1 a:hover span{
+        display: inline-block;
+    }
+    header h2{
+        font-size: 12px;
+        vertical-align: bottom;
+        display: inline-block;
+        position: relative;
+        left: 120px;
+        width: 340px;
+        top: -20px;
+    }
+#search{
+    z-index: 100;
+    width: 460px;
+    vertical-align: baseline;
+    position: relative;
+    display: inline-block;
+    top:0;
+    -background: darkgoldenrod;
+    margin: 0 10px;
+}
+#search  fieldset{
+    padding: 10px 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+    background: green;
+    background: -moz-linear-gradient(top,green 50%,darkgreen 50%);
+}
+#search input[type=search]{
+    width: 300px;
+    border: 1px green solid;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
+    line-height: 25px;
+    height: 25px;
+}
+#search input[type=submit]{
+    background: -moz-linear-gradient(top, white, #AAA);
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3), 1px 1px 3px rgba(255,255,255,.2) inset, -1px -1px 3px rgba(0,0,0,.2) inset;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-shadow: -1px -1px 1px rgba(0,0,0,.3);
+    height: 30px;
+    padding: 2px 30px;
+    color: black;
+}
+#panier{
+    display: inline-block;
+    margin: 10px;
+    width: 160px;
+    top:73px;
+    text-align: right;
+    vertical-align: top;
+    z-index: 100;
+    font-size: 12px;
+    position: absolute;
+    text-align: left;
+    margin-left: -320px;
+}
+    #panier a{
+        color: white;
+        text-decoration: none;
+        line-height: 40px;
+        display: inline-block;
+        padding: 3px 10px;
+    }
+#menu{
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    font-size: 13px;
+    padding: 0;
+    height: 44px;
+    text-align: center;
+    box-shadow: 0 0 5px  rgba(0,0,0,.2);
+    background: darkkhaki;
+    border-top: 1px darkkhaki solid;
+    border-bottom:1px #878356 solid;
+    background:  -moz-linear-gradient(bottom, darkkhaki, khaki);
+    z-index: 1800;
+}
+    #menu>li{
+        display: inline-block;
+        padding: 13px 21px 13px 20px;
+        text-align: center;
+        vertical-align: middle;
+        z-index: 100;
+        color: black;
+    }
+    #menu>li ul{
+        background: none repeat scroll 0 0 blue;
+        color: black;
+        display: none;
+        margin-left: -19px;
+        margin-top: 13px;
+        min-width: 100px;
+        padding-left: 30px;
+        position: absolute;
+        text-align: left;
+        line-height: 2em;
+    }
+    #menu>li:hover{
+        background: darkkhaki;
+        box-shadow: 0 0 5px  rgba(0,0,0,.2)inset;
+        z-index: 10;
+        -height: 34px;
+        padding-right: 20px;
+        padding-left: 19px;
+        border-right: 1px khaki solid;
+        border-left: 1px khaki solid;
+        -text-shadow: 1px 1px 1px rgba(255,255,255,.5);
+        -line-height: 35px;
+        -margin-top: -1px;
+        color: #333;
+        background: -moz-radial-gradient(bottom,rgba(240,230,140,.6) 20%,rgba(240,230,140,0) 80%);
+    }
+    #menu a{
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+    #menu>li.active{
+        box-shadow: 0 0 5px  rgba(0,0,0,.5);
+        -height: 40px;
+        margin-top: -4px;
+        -line-height: 40px;
+        padding: 18px 20px 13px;
+        background: green;
+        background: green -moz-linear-gradient(top,green 50%,darkgreen 50%);
+        z-index: 200;
+        position: relative;
+        margin-right: -1px;
+        border-right:1px green solid;
+        border-left:1px green solid;
+        color: white;
+    }
+    #menu>li:hover ul{
+        background: white;
+        display: block;
+        border:1px gray solid;
+        border-top: none;
+    }
+    #slider{
+        padding: 20px 0 45px;
+        border-bottom: 1px #878356 solid;
+        text-align: center;
+        background: darkkhaki url('../img/herbe.jpg') top center repeat-x;
+        z-index: 500;
+        display: block;
+        box-shadow: 0 0 4px rgba(0,0,0,.3);
+        position: relative;
+    }
+    #slider #promo, #slider #liquidation{
+        display: inline-block;
+        width: 450px;
+        margin: 0 10px;
+        background: white;
+        height: 180px;
+        position: relative;
+        padding: 10px;
+        -background: black url('data:image/jpeg;base64,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') repeat-x;
+        moz-box-sizing:border-box;
+        box-shadow: 0 0 6px 4px rgba(0,0,0,.3);
+    }
+    #promo h3,#liquidation h3{
+        color: black;
+        font-size: 36px;
+        
+    }
+    #promo p,#liquidation p{
+        color: black;
+        font-size: 14px;
+    }
+    #promo span,#liquidation span{
+        position: relative;
+        float: right;
+        -moz-transform: rotate(10deg);
+        color: red;
+        font-weight: bold;
+    }
+#corps{
+    min-height: 500px;
+    width: 960px;
+    margin: auto;
+    vertical-align: top;
+    -box-shadow: 0 0 10px rgba(0,0,0,.2);
+    -background: rgba(255,255,255,0.2);
+}
+    #corps>.full{
+        padding: 10px;
+        border-right: 1px rgba(255,255,255,.3) solid;
+        border-left: 1px rgba(255,255,255,.3) solid;
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
+        background: white;
+        min-height: 600px;
+        width: 940px;
+    }
+    #corps ol, #corps ul{
+        list-style-type: none;
+    }
+        #corps ol{
+            text-align: center;
+            padding: 0;
+            margin: 40px 0 80px;
+        }
+        #corps ol li{
+            margin: 0 40px;
+            text-align: center;
+            display: inline-block;
+            font-size: 12px;
+            padding: 5px;
+            background: darkkhaki;
+            border-radius: 100px;
+            width: 130px;
+            border:1px #878356 solid;
+            box-shadow: 0 0 3px 1px rgba(0,0,0,.3);
+        }
+        #corps ol span{
+            position: absolute;
+            margin-left: -140px;
+            margin-top: 120px;
+            width: 140px;
+            padding: 10px 5px;
+            vertical-align: middle;
+            border:1px #878356 solid;
+            box-shadow: 0 2px 3px 1px rgba(0,0,0,.4);
+            background: #DDD;
+            font-weight: bold;
+        }
+        #corps ol img{
+            border:1px #878356 solid;
+            background: khaki;
+            box-shadow: 0 0 5px 1px rgba(0,0,0,.2) inset;
+            -padding: 5px;
+            border-radius: 70px;
+        }
+    #corps #sidebar{
+        width: 144px;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right:15px;
+        color: black;
+        display: inline-block;
+        -border-right: 1px rgba(255,255,255,.2) solid;
+        -background: darkkhaki;
+        font-size: 14px;
+        border:1px #878356 solid;
+        border-right: none;
+        border-radius: 5px 0 0 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+    }
+    #sidebar ul{
+        margin-top: 5px;
+        padding-left: 15px;
+        list-style-type: none;
+    }
+    #connexion{
+        position: relative;
+        width: 172px;
+        margin-left: -10px;
+        z-index: 0;
+        color: white;
+        margin-bottom: 15px;
+    }
+    #connexion fieldset{
+        padding: 10px;
+        padding-right: 0;
+        border-radius: 5px 0 0 0 ;
+        color: black;
+        -background: green;
+        -background:  -moz-linear-gradient(top,green 50%,darkgreen 50%);
+        -border:1px darkgreen solid;
+    }
+        #inscription fieldset{
+            padding: 10px;
+            margin: 10px;
+            border:1px black solid;
+        }
+        #inscription label{
+            width: 400px;
+            display: inline-block;
+            text-align: right;
+            margin-right: 10px;
+        }
+        #inscription legend{
+            margin-left: 10px;
+            padding: 0 10px;
+        }
+        #inscription p, #inscription span{
+            display: block;
+        }
+        #inscription span{
+            margin-left: 410px;
+        }
+    #corps #ariane{
+        font-size: 12px;
+        margin-bottom: 2em;
+    }
+        #corps #ariane a{
+            text-decoration: none;
+            color: green;
+        }
+            #corps #ariane a:hover{
+                text-decoration: underline;
+            }
+    #corps section{
+        z-index: 200;
+        position: relative;
+        vertical-align: top;
+        display: inline-block;
+        width: 748px;
+        padding: 20px;
+        border-right: 1px rgba(255,255,255,.3) solid;
+        border-left: 1px rgba(255,255,255,.3) solid;
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
+        -background: #A4DE80;
+        background: white;
+    }
+    article.articles{
+        width: 364px;
+        display: inline-block;
+        color: black;
+        margin-bottom: 25px;
+    }
+    article h3{
+        -text-shadow:0 0 4px rgba(0,0,0,.4);
+        color: black;
+    }
+    article:nth-child(even){
+        margin-left: 20px;
+    }
+    article.articles img{
+        width: 116px;
+        height: 136px;
+        border: 2px green solid;
+        display: inline-block;
+        background: white;
+        vertical-align: text-top;
+        box-shadow:0 0 8px rgba(0,0,0,.2);
+    }
+    article.articles p{
+        width: 226px;
+        display: inline-block;
+        font-size: 12px;
+        margin:0;
+        margin-left: 10px;    
+        vertical-align: top;
+
+    }
+    article.article{
+        margin: 0;
+    }
+    article.article h3{
+        color: #3F3D2B;
+    }
+    article.article ul{
+        padding-left: 45px;
+    }
+    article.article li{
+        font-size: 13px;
+        list-style-type: circle;
+        margin-left:0px;
+    }
+        .description{
+            display: inline-block;
+            width: 530px;
+            margin-left: 10px;
+            margin-top: 0;
+        }
+    article.article .info_fiche, hr{
+
+        border-top: 1px #3F3D2B dashed;
+    }
+    article.article .info_fiche h4{
+        display: inline-block;
+        margin: 0;
+        color: #3F3D2B;
+        margin-top: 10px;
+        width: 23%;
+    }
+    article.article img{
+        display: inline-block;
+    }
+    #panierTable{
+        width: 860px;
+        margin: auto;
+        border: 1px darkkhaki solid;
+    box-shadow: 0 0 5px  rgba(0,0,0,.3);
+    }
+#panierTable thead,#panierTable tbody tr:last-child{
+
+    background: darkkhaki;
+    border-top: 1px darkkhaki solid;
+    border-bottom:1px #878356 solid;
+    text-align: left;
+    font-weight: bold;
+    background:  -moz-linear-gradient(bottom, darkkhaki, khaki);
+}
+    #panierTable thead{
+        text-align: center;
+    }
+    #panierTable th{
+        padding: 5px;
+    }
+    #panierTable td{
+        padding: 5px;
+        font-size: 14px;
+    }
+    #panierTable .prix{
+        text-align: right;
+        min-width: 50px;
+    }
+    #commandeForm .lien{
+
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        margin-bottom: 10px;
+        line-height: 20px;
+        display: inline-block;
+    }
+    #commandeForm button.lien{
+        background: darkkhaki;
+        border:1px darkkhaki solid;
+        float: right;
+        right: 10px;
+        box-shadow: 0 0 2px  rgba(0,0,0,.3);
+        background: -moz-linear-gradient(top,khaki,darkkhaki);
+    }
+    #commandeForm textarea{
+        background: white;
+        border:1px #AAA solid;
+        box-shadow: 0 0 4px rgba(0,0,0,.3) inset;
+        display: block;
+        margin-bottom: 20px;
+    }
+    #commandeForm .commentaire{
+        width: 860px;
+        margin: auto;
+    }
+footer{
+    text-align: center;
+    border-top: 1px darkkhaki solid;
+    background: darkkhaki;
+    background: -moz-linear-gradient(top,khaki,darkkhaki);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    -box-shadow: 0 0 4px rgba('0,0,0,.1');
+    padding: 10px 0;
+    z-index: 500;
+}
+    footer a{
+        color: black;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (max-width: 976px){
+
+    #corps #sidebar{
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        overflow: hidden;
+    }
+}
+@media only screen and (max-width: 25em){
+    /* Style adjustments for viewports that meet the condition */
+    #corps{
+        width: 100%;
+    }
+    header{
+        -moz-box-sizing:box-margin;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+    header h1{
+        display: block;
+    }
+    header h2{
+        padding: 0;
+    }
+    nav{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    #slider #promo, #slider #liquidation{
+        width: 200px;
+    }
+    #corps section{
+        width: 100%;
+        margin: 0;
+        padding: 20px 0;
+    }
+    section article{
+        margin-left: 20px;
+    }
+    footer{
+        margin: 0;
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
