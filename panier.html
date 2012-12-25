@@ -13,7 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -27,42 +27,39 @@
                 <span>Retour à l'accueil</span></a></h1>
                 <h2>Produits naturels, bio et écologiques pour toute la famille</h2>
             </header>
-            <span class="lien_haut"><a href="#">Mon compte</a><a href="#">Deconnexion</a></span>
             <form id="search">
                 <fieldset>
                     <input placeholder="Recherche&nbsp;: enfant, vitamine,&hellip;" type="search">
                     <input type="submit" value="Go">
                 </fieldset>
             </form><div id="panier"><b>Mon panier</b>
-        <table collspan="0">
-            <tr>
-                <td>2 articles</td>
-                <td>Lot de 2</td>
-                <td class="prix" style="width:40px;">2,20 €</td>
-            </tr>
-        </table>
-            </div>
+            <table collspan="0">
+                <tr>
+                    <td>2 articles</td>
+                    <td>Lot de 2</td>
+                    <td style="width:40px;">2,20 €</td>
+                </tr>
+            </table>
+        </div>
+            <span class="lien_haut"><a href="inscription.html">Inscription</a> <a href="#">Connexion</a></span>
         </div>
         <ul id="menu">
             <li class="active">Bon plans
                         <ul><li>Test</li><li>Test</li></ul></li><li>Vêtements</li><li>Grossesse & Naissance</li><li>Loisir & Détente</li><li><a href="article.html">Santé &amp; Hygiène</a></li><li>Fourniture</li><li>Livres</li><li>Maison naturel</li>
         </ul>
         <div id="corps">
-            <div class="full">
+            <div id="panier_resume" class="full">
                 <ol>
-                    <li>
+                    <li class="active">
                         <img src="img/panier.png" alt="Panier" title="Panier"/>
                         <span>Résumé du panier et Prix total des achats</span>
-                    </li>
-                    <li>
+                    </li><li>
                         <img src="img/adresse.png" alt="Adresse" title="Adresse"/>
                         <span>Adresse de facturation et de livraison</span>
-                    </li>
-                    <li>
+                    </li><li>
                         <img src="img/verification.png" alt="Commande" title="Commande"/>
                         <span>Confirmation de la commande</span>
-                    </li>
-                    <li>
+                    </li><li>
                         <img src="img/paiement.png" alt="CyberMUT" title="CyberMut"/>
                         <span>Paiement  avec CM-CIC p@iement</span>
                     </li>
@@ -78,13 +75,6 @@
                     <button type="submit" class="lien" name="SaveAndDoOrder" value="Règlement">
                         Étape suivante&nbsp;&#9658;
                     </button>
-                    <input type="hidden" name="ViewAction" value="ViewAddress" />
-                    <input type="hidden" name="ChangeAction" id="ChangeActionInput" value="SaveAndDoOrder" />
-                    <input type="hidden" name="ViewAction" id="ViewActionInput" value="View" />
-                    <input type="hidden" name="ValidButton" value="Save" />
-                    <input type="hidden" name="ValidButton" value="SaveAndDoOrder" />
-                    <input type="hidden" name="ValidButton" value="ViewAddress" />
-                    <input type="hidden" name="SessionID" value="431032ad6c41ad42705a31701f2453eb" />
                     <table id="panierTable">
                         <thead>
                             <tr class="AlternateRow">
@@ -97,7 +87,6 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <input type="hidden" name="LineItemID" value="17054102" />
                                     <input name="Quantity" value="1"
                                          size="4" title="Champ de saisie de la quantité commandée"
                                          type="number" />
@@ -127,7 +116,7 @@
                                 <td class="prix">8,99 €</td>
                                 <td class="prix">8,99 €</td>
                             </tr>
-                            <tr style="border: 1px darkkhaki solid">
+                            <tr style="border: 1px #4D7222 solid">
                                 <td colspan="3">Sous-total</td>
                                 <td class="prix">8,99 €</td>
                             </tr>
@@ -147,7 +136,7 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr style="border: 1px darkkhaki solid">
+                            <tr style="border: 1px #4D7222 solid">
                                 <td colspan="3" >Remise sur le panier 5%</td>
                                 <td class="prix">-0,45 €</td>
                             </tr>
@@ -170,26 +159,7 @@
                                 <td></td>
                                 <td class="prix">4,70 €</td>
                             </tr>
-                            <tr class="SeparateRow AlternateRow">
-                                <td>Mode de paiement</td>
-                                <td colspan="2">
-                                    <p>
-                                        <select class="ep-metaparse ep.uiInput() basketPaymentSelect" name="PaymentMethod" title="Sélectionner un mode de paiement">
-                                            <option value="11123669" selected="selected">Carte bancaire (Visa, Mastercard, CB)</option>
-                                            <option value="104691" >Paypal</option>
-                                            <option value="103952" >Virement bancaire</option>
-                                            <option value="123340" >Chèque</option>
-                                            <option value="243780" >Contre Remboursement</option>
-                                        </select><br/>
-                                        <span style="text-decoration: underline;">Paiement par carte bancaire / de crédit:</span><br/>
-                                        - vous payez directement en ligne avec votre <strong>CB, Visa, ou Mastercard</strong><br/>
-                                        - vous allez être dirigé automatiquement sur une page sécurisée de notre partenaire (cyberMut/CIC)<br/>
-                                        - le paiement est IMMEDIAT, il n'y a <strong>AUCUNE autre formalité</strong>
-                                    </p>
-                                </td>
-                                <td></td>
-                            </tr>
-                        <tr style="border-top: 1px darkkhaki solid">
+                        <tr style="border-top: 1px #4D7222 solid">
                             <td colspan="2">Montant total (hors TVA):</td>
                             <td colspan="2" class="prix">10,94 €</td>
                         </tr>
@@ -204,7 +174,7 @@
                     </table>
                     <div class="commentaire">
                         <h4>Commentaires sur la commande et la livraison:</h4>
-                        <textarea id="CustomerComment" name="CustomerComment" rows="7" style="width:100%"></textarea>
+                        <textarea id="CustomerComment" name="CustomerComment" rows="7"></textarea>
                     </div>
                     <a href="#" class="lien">&#9668;&nbsp;Continuer les achats</a>                    
                     <button type="submit" class="lien" name="SaveAndDoOrder" value="Règlement">
@@ -212,12 +182,14 @@
                     </button>
                 </form>
                 <hr />
-                <h3>Important</h3>
-                <h4>Commande</h4>
-                <p>En cliquant sur le bouton 'finaliser la commande' à la fin du processus de commande, vous placez un ordre d'achat définitif pour tous les articles placés dans votre panier d"achat, et vous reconnaissez avoir lu et accepté nos conditions générales de vente.</p>
-                <p>Vous recevrez la confirmation par email juste après la fin de la commande. </p>
-                <h4>Droits de renonciation</h4>
-                <p>Conformément à la loi du 14 juillet 1991, le consommateur a le droit de notifier au vendeur qu'il renonce à l'achat, sans pénalités et sans indication de motif, dans les 7 jours ouvrables à dater du lendemain du jour de la livraison du produit.</p>
+                <div>
+                    <h3>Important</h3>
+                    <h4>Commande</h4>
+                    <p>En cliquant sur le bouton 'finaliser la commande' à la fin du processus de commande, vous placez un ordre d'achat définitif pour tous les articles placés dans votre panier d"achat, et vous reconnaissez avoir lu et accepté nos conditions générales de vente.</p>
+                    <p>Vous recevrez la confirmation par email juste après la fin de la commande. </p>
+                    <h4>Droits de renonciation</h4>
+                    <p>Conformément à la loi du 14 juillet 1991, le consommateur a le droit de notifier au vendeur qu'il renonce à l'achat, sans pénalités et sans indication de motif, dans les 7 jours ouvrables à dater du lendemain du jour de la livraison du produit.</p>
+                </div>
             </div>
         </div><!--- Fin du corps -->
 
