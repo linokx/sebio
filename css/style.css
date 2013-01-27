@@ -897,6 +897,9 @@ article.article img {
   margin-top: 10px;
   width: 340px;
 }
+.simple div {
+  min-height: 142px;
+}
 .simple {
   position: relative;
 }
