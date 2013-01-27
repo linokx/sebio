@@ -719,6 +719,9 @@ ol span {
   padding-right: 0;
 }
 /*--------------- INSCRIPTION ---------------*/
+#inscription {
+  text-align: center;
+}
 #inscription fieldset {
   border: none;
   margin: 10px;
@@ -1315,10 +1318,10 @@ footer {
   border-top: 1px #4D7222 solid;
   display: inline-block;
   left: 0;
-  padding: 10px;
+  padding: 10px 0;
   position: absolute;
   text-align: center;
-  width: auto;
+  width: 100%;
   z-index: 500;
 }
 footer a {
