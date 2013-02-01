@@ -30,8 +30,9 @@
 <p>Déodorant en pierre d'Alun (Laboratoire Gravier)<br/>PROMO -25%</p>
     </div><section>
     <div id="ariane"><a href="#">Santé &amp; Hygiène</a> > <a href="#">Déodorants</a> > <a href="#">Pierre d'alun</a> > Déodorant en pierre d'Alun (Laboratoire Gravier) - 60gr</div>
+        <h3>Déodorant en pierre d'Alun (Laboratoire Gravier) - 60gr</h3>
         <article class="article">
-            <h3>Déodorant en pierre d'Alun (Laboratoire Gravier) - 60gr</h3>
+            <h3>Description du produit</h3>
             <img src="img/article.jpg" />
             <div class="description">
                 <p>Le déodorant corporel en Pierre d'Alun de potassium du Laboratoire GRAVIER s'utilise comme un déodorant classique.</p>
@@ -73,6 +74,28 @@
                     <li>Ne pas faire tomber (la pierre d'alun peut se casser).</li>
                 </ul>
             </div>
+    </article>
+    <h3>Produit identique</h3>
+    <article class="identique" itemscope itemtype="http://schema.org/Product">
+        <div>
+        <a href="article.php"><img itemprop="image" src="img/holle.jpg" alt="Produit Holle" /></a>
+        <h4 itemprop="name"><a href="article.php">Holle</a></h4>
+        <span itemprop="description">Quelques nouveaux produits de la célèbre marque allemande de petits pots pour bébé (légumes, fruits, menus&hellip;).</span>
+        
+    </div><a href="panier.php" class="panier">
+            <span itemprop="price" class="prix">26<span class="monnaie">€</span></span>
+            <span class="ajouter">Ajouter au panier</span>
+        </a>
+    </article><article class="identique" itemscope itemtype="http://schema.org/Product">
+        <div>
+        <a href="article.php"><img itemprop="image" src="img/holle.jpg" alt="Produit Holle" /></a>
+        <h4 itemprop="name"><a href="article.php">Holle</a></h4>
+        <span itemprop="description">Quelques nouveaux produits de la célèbre marque allemande de petits pots pour bébé (légumes, fruits, menus&hellip;).</span>
+        
+    </div><a href="panier.php" class="panier">
+            <span itemprop="price" class="prix">26<span class="monnaie">€</span></span>
+            <span class="ajouter">Ajouter au panier</span>
+        </a>
     </article>
 </section>
 <?php include('footer.php'); ?>

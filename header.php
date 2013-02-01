@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Sebio, vente de produits bio et écologiques</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -25,7 +25,7 @@
         <!-- Add your site or application content here -->
         <div id="bandeau_header">
             <header><h1><a href="index.php"><img src="img/logoc.png"/>
-                <span>Retour à l'accueil</span></a></h1>
+                <span>Sebio</span></a></h1>
                 <h2>Produits naturels, bio et écologiques pour toute la famille</h2>
             </header>
             <form id="search">
@@ -41,6 +41,5 @@
         </div>
         <div class="mobile"><a href="#" class="menu">Menu</a><a href="#" class="recherche">Recherche</a><a href="panier.php" class="panier_mobile">Panier</a></div>
         <ul id="menu">
-            <li class="active">Bon plans
-                        <ul><li>Test</li><li>Test</li></ul></li><li>Vêtements</li><li>Grossesse &amp; Naissance</li><li>Loisir &amp; Détente</li><li><a href="article.php">Santé &amp; Hygiène</a></li><li>Fourniture</li><li>Livres</li><li>Maison naturel</li>
+            <li class="active"><a href="article.php">Bon plans</a></li><li><a href="article.php">Vêtements</a></li><li><a href="article.php">Grossesse &amp; Naissance</a></li><li><a href="article.php">Loisir &amp; Détente</a></li><li><a href="article.php">Santé &amp; Hygiène</a></li><li><a href="article.php">Fourniture</a></li><li><a href="article.php">Livres</a></li><li><a href="article.php">Maison naturel</a></li>
         </ul>

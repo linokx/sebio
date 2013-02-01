@@ -4,9 +4,9 @@
     <form>
         <fieldset>
             <legend>Informations de connexion</legend>
-            <label>Adresse e-mail </label><input>
-            <label>Mot de passe </label><input>
-            <label>Confirmation du mot de passe </label><input>
+            <label>Adresse e-mail </label><input type="text">
+            <label>Mot de passe </label><input type="password">
+            <label>Confirmation du mot de passe </label><input type="password">
         </fieldset>
         <?php /*
         <fieldset>

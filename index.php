@@ -11,9 +11,9 @@
     <form id="connexion">
         <fieldset>
             <label>Login</label>
-            <input /><br/>
+            <input type="text" /><br/>
             <label>Mot de passe</label>
-            <input />
+            <input type="password" />
             <input type="submit" value="Connexion">
         </fieldset>
     </form>
@@ -23,6 +23,7 @@
             <li>Promotion</li>
             <li>Liquidation</li>
         </ul>
+        <h4>Produit au hasard</h4>
         <img src="img/holle.jpg" alt="Produit Holle" />
 <p>Déodorant en pierre d'Alun (Laboratoire Gravier) - Sticker - PROMO - 25% (5,93 vs 7,9) (8,7 vs 11,6)
 5,93 € * </p>
@@ -31,8 +32,8 @@
     <article class="sections">
         <section>
             <article class="articles important" itemscope itemtype="http://schema.org/Product">
-                <img itemprop="image" src="img/top.png" alt="Produit Stevia" width="340px" height="136px" />
-                <div><h4 itemprop="name">Stevia</h4>
+                <a href="article.php"><img itemprop="image" src="img/top.png" alt="Produit Stevia" width="340px" height="136px" /></a>
+                <div><h4 itemprop="name"><a href="article.php">Stevia</a></h4>
                 <span itemprop="description">Pour sucrer de manière naturelle et avec 0 kcal !<br/>Disponible en 3 formats.</span>
                 
                 </div><a href="panier.php" class="panier">
@@ -43,8 +44,8 @@
         </section><section>
             <article class="articles simple" itemscope itemtype="http://schema.org/Product">
                 <div>
-                <img itemprop="image" src="img/holle.jpg" alt="Produit Holle" />
-                <h4 itemprop="name">Holle</h4>
+                <a href="article.php"><img itemprop="image" src="img/holle.jpg" alt="Produit Holle" /></a>
+                <h4 itemprop="name"><a href="article.php">Holle</a></h4>
                 <span itemprop="description">Quelques nouveaux produits de la célèbre marque allemande de petits pots pour bébé (légumes, fruits, menus&hellip;).</span>
                 
             </div><a href="panier.php" class="panier">
@@ -53,12 +54,12 @@
                 </a>
             </article><article class="articles simple" itemscope itemtype="http://schema.org/Product">
                 <div>
-                <img itemprop="image" src="img/holle.jpg" alt="Produit Holle" />
-                    <h4 itemprop="name">Attitude</h4>
+                <a href="article.php"><img itemprop="image" src="img/holle.jpg" alt="Produit Holle" /></a>
+                    <h4 itemprop="name"><a href="article.php">Attitude</a></h4>
                     <span itemprop="description">Toute une gamme de produits de soin corporel: shampooings, conditionners, gels douche, savons main et une gamme pour enfant&nbsp;!</span>
                 
                 </div><a href="panier.php" class="panier">
-                    <span itemprop="price" class="prix">26<span class="monnaie">€</span></span>
+                    <span itemprop="price" class="prix">50<span class="monnaie">€</span></span>
                     <span class="ajouter">Ajouter au panier</span>
                 </a>
             </article>
@@ -68,12 +69,12 @@
     <article class="sections">
         <section>
             <article class="articles important" itemscope itemtype="http://schema.org/Product">
-                <img itemprop="image" src="img/top.png" alt="Produit Attitude" width="340px" height="136px" />
+                <a href="article.php"><img itemprop="image" src="img/top.png" alt="Produit Attitude" width="340px" height="136px" /></a>
                 <div>
-                    <h4 itemprop="name">Attitude</h4>
+                    <h4 itemprop="name"><a href="article.php">Attitude</a></h4>
                     <span itemprop="description">Nouveau: toute une gamme de produits de soin corporel: shampooings, conditionners, gels douche, savons main, &hellip;</span>
                 <a href="panier.php" class="panier">
-                    <span itemprop="price" class="prix">26<span class="monnaie">€</span></span>
+                    <span itemprop="price" class="prix">12<span class="monnaie">€</span></span>
                     <span class="ajouter">Ajouter au panier</span>
                 </a>
                 </div>
@@ -81,8 +82,8 @@
         </section><section>
             <article class="articles simple" itemscope itemtype="http://schema.org/Product">
                 <div>
-                <img itemprop="image" src="img/holle.jpg" alt="Produit Holle" />
-                    <h4 itemprop="name">Stevia</h4>
+                <a href="article.php"><img itemprop="image" src="img/holle.jpg" alt="Produit Holle" /></a>
+                    <h4 itemprop="name"><a href="article.php">Stevia</a></h4>
                     <span itemprop="description">Pour sucrer de manière naturelle et avec 0 kcal !<br/>Disponible en 3 formats.</span>
                 
                 </div><a href="panier.php" class="panier">
@@ -91,8 +92,8 @@
                 </a>
             </article><article class="articles simple" itemscope itemtype="http://schema.org/Product">
                 <div>
-                <img itemprop="image" src="img/holle.jpg" alt="Produit Holle" />
-                    <h4 itemprop="name">Holle</h4>
+                <a href="article.php"><img itemprop="image" src="img/holle.jpg" alt="Produit Holle" /></a>
+                    <h4 itemprop="name"><a href="article.php">Holle</a></h4>
                     <span itemprop="description">Quelques nouveaux produits de la célèbre marque allemande de petits pots pour bébé (légumes, fruits, menus&hellip;).</span>
                 
                 </div><a href="panier.php" class="panier">

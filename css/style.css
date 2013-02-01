@@ -465,7 +465,6 @@ ol span {
 }
 #menu > li {
   display: inline-block;
-  padding: 13px 21px 13px 20px;
   text-align: center;
   vertical-align: middle;
   z-index: 100;
@@ -487,8 +486,6 @@ ol span {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
   z-index: 10;
   -height: 34px;
-  padding-right: 20px;
-  padding-left: 19px;
   border-right: 1px #A0CA42 solid;
   border-left: 1px #A0CA42 solid;
   -text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
@@ -502,9 +499,14 @@ ol span {
   background: -ms-radial-gradient(center top, rgba(133, 150, 50, 0) 20%, rgba(133, 173, 55, 0.6) 70%);
   background: -o-radial-gradient(center top, rgba(133, 150, 50, 0) 20%, rgba(133, 173, 55, 0.6) 70%);
 }
+#menu > li:hover a {
+  padding-right: 20px;
+  padding-left: 19px;
+}
 #menu a {
   color: inherit;
   display: block;
+  padding: 13px 21px 13px 20px;
   text-decoration: none;
 }
 #menu > li.active {
@@ -519,7 +521,6 @@ ol span {
   color: #FFF;
   margin-right: -1px;
   margin-top: -4px;
-  padding: 18px 20px 13px;
   position: relative;
   z-index: 200;
 }
@@ -827,7 +828,8 @@ article h3 {
 article section:nth-child(even) {
   margin-left: 20px;
 }
-.articles img {
+.articles img,
+.identique img {
   background: #FFF;
   border: 2px #008001 solid;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
@@ -838,7 +840,8 @@ article section:nth-child(even) {
   vertical-align: text-top;
   width: 116px;
 }
-.articles div {
+.articles div,
+.identique div {
   display: inline-block;
   font-size: 12px;
   margin: 0;
@@ -846,9 +849,21 @@ article section:nth-child(even) {
   vertical-align: top;
   width: auto;
 }
-.articles h4 {
+.articles h4,
+.identique h4 {
   font-size: 16px;
   margin: 0;
+}
+.articles h4 a,
+.identique h4 a {
+  color: black;
+  text-decoration: none;
+}
+.articles h4 a:hover,
+.identique h4 a:hover,
+.articles h4 a:active,
+.identique h4 a:active {
+  text-decoration: underline;
 }
 article.article {
   margin: 0;
@@ -884,6 +899,13 @@ article.article .info_fiche h4 {
 }
 article.article img {
   display: inline-block;
+}
+article.identique {
+  color: black;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  width: 46%;
 }
 .important {
   height: 340px;
@@ -980,7 +1002,8 @@ article.article img {
     display: block;
     width: auto;
   }
-  article.articles {
+  article.articles,
+  .identique {
     width: auto;
   }
   article section:nth-child(even) {
@@ -1123,7 +1146,12 @@ section .panier:hover .prix {
   min-width: 50px;
   text-align: right;
 }
-#panier_resume > div {
+#panier_resume #note_panier {
+  background: #e1e1e1;
+  padding: 20px 30px;
+  width: auto;
+}
+#panier_resume div {
   margin: 0 auto;
   width: 860px;
 }
@@ -1175,8 +1203,20 @@ section .panier:hover .prix {
   background: -ms-radial-gradient(center top, #a0ca42 0%, #4d7222 100%);
   background: -o-radial-gradient(center top, #a0ca42 0%, #4d7222 100%);
   border: 1px #4D7222 solid;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  border-radius: 0 15px;
+  box-shadow: 0 2px 3px 1px rgba(20, 20, 20, 0.8);
   color: #FFF;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+}
+#commandeForm button.lien:hover {
+  box-shadow: 0 0px 3px 0px rgba(20, 20, 20, 0.5);
+  top: 2px;
+}
+#commandeForm button.lien:active {
+  box-shadow: 1px 1px 3px 0px rgba(20, 20, 20, 0.7) inset;
+  height: 42px;
+  line-height: 24px;
+  top: 2px;
 }
 #commandeForm h4 {
   margin: 35px 0 10px;
@@ -1307,6 +1347,31 @@ tr th {
     margin-bottom: 10px;
     width: 98%;
   }
+  #note_panier h3 {
+    margin-top: 0;
+  }
+}
+/*------------ LIVRAISON -----------------*/
+#livraison div {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+}
+#livraison div label {
+  display: block;
+}
+#livraison div label input {
+  height: 1.3em;
+}
+#livraison div label.active:after {
+  content: ">";
+  float: right;
+}
+#livraison #infoAdresse {
+  border: 2px solid green;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+  padding: 10px;
 }
 /*------------ FOOTER -----------------*/
 footer {

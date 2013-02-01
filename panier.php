@@ -22,7 +22,7 @@
           <p>Ajoutez des produits d'une valeur de <em>51,46 €</em> afin de bénéficier de la livraison gratuite via <em>Envoi du colis (par coliposte ou taxipost)</em>.</p>
         </div>
         <hr/>
-        <form id="commandeForm" method="post" action="#">
+        <form id="commandeForm" method="post" action="livraison.php">
             <a href="#" class="lien">&#9668;&nbsp;Continuer les achats</a>
             <button type="submit" class="lien" name="SaveAndDoOrder" value="Règlement">
                 Étape suivante&nbsp;&#9658;
@@ -96,7 +96,7 @@
             </button>
         </form>
         <hr />
-        <div>
+        <div id="note_panier">
             <h3>Important</h3>
             <h4>Commande</h4>
             <p>En cliquant sur le bouton 'finaliser la commande' à la fin du processus de commande, vous placez un ordre d'achat définitif pour tous les articles placés dans votre panier d"achat, et vous reconnaissez avoir lu et accepté nos conditions générales de vente.</p>
