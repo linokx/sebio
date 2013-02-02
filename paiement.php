@@ -22,11 +22,7 @@
           <p>Ajoutez des produits d'une valeur de <em>51,46 €</em> afin de bénéficier de la livraison gratuite via <em>Envoi du colis (par coliposte ou taxipost)</em>.</p>
         </div>
         <hr/>
-        <form id="commandeForm" method="post" action="confirmation.php">
-            <a href="panier.php" class="lien">&#9668;&nbsp;Retour</a>
-            <button type="submit" class="lien" name="SaveAndDoOrder" value="Règlement">
-                Étape suivante&nbsp;&#9658;
-            </button>
+        <form id="commandeForm" method="post" action="paiement.php">
             <div id="livraison">
                 <div id="choixAdresse">
                     <label class="active"><input type="radio" name="adresse" checked="checked" /> Envoyer à mon adresse</label>
@@ -37,9 +33,9 @@
                 Belgique
                 </div>
             </div>
-            <a href="panier.php" class="lien">&#9668;&nbsp;Retour</a>                    
+            <a href="confirmation.php" class="lien">&#9668;&nbsp;Retour</a>                    
             <button type="submit" class="lien" name="SaveAndDoOrder" value="Règlement">
-                Étape suivante&nbsp;&#9658;
+                Valider le paiement
             </button>
         </form>
         <hr />

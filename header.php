@@ -37,9 +37,9 @@
             <p>2 articles</p>
             <a class="btn" href="panier.php">Voir mon panier</a>
         </div>
-            <span class="lien_haut"><a href="inscription.php">Inscription</a> <a href="connexion.php">Connexion</a></span>
+            <span class="lien_haut"><a href="connexion.php">Inscription</a> <a href="connexion.php">Connexion</a></span>
         </div>
         <div class="mobile"><a href="#" class="menu">Menu</a><a href="#" class="recherche">Recherche</a><a href="panier.php" class="panier_mobile">Panier</a></div>
         <ul id="menu">
-            <li class="active"><a href="article.php">Bon plans</a></li><li><a href="article.php">Vêtements</a></li><li><a href="article.php">Grossesse &amp; Naissance</a></li><li><a href="article.php">Loisir &amp; Détente</a></li><li><a href="article.php">Santé &amp; Hygiène</a></li><li><a href="article.php">Fourniture</a></li><li><a href="article.php">Livres</a></li><li><a href="article.php">Maison naturel</a></li>
+            <li class="active"><a href="categorie.php">Bon plans</a></li><li><a href="categorie.php">Vêtements</a></li><li><a href="categorie.php">Grossesse &amp; Naissance</a></li><li><a href="categorie.php">Loisir &amp; Détente</a></li><li><a href="categorie.php">Santé &amp; Hygiène</a></li><li><a href="categorie.php">Fourniture</a></li><li><a href="categorie.php">Livres</a></li><li><a href="categorie.php">Maison naturel</a></li>
         </ul>

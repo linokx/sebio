@@ -242,9 +242,8 @@ header h2 {
   background: -webkit-linear-gradient(top, #62c462 0%, #51a351 100%);
   background: -ms-radial-gradient(center top, #62c462 0%, #51a351 100%);
   background: -o-radial-gradient(center top, #62c462 0%, #51a351 100%);
-  border: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), 1px 1px 3px rgba(255, 255, 255, 0.2) inset, -1px -1px 3px rgba(0, 0, 0, 0.2) inset;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: 1px #51a351 solid;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 0.3) inset, -1px -1px 1px rgba(0, 0, 0, 0.3) inset;
   border-radius: 3px;
   color: #FFF;
   height: 30px;
@@ -252,8 +251,11 @@ header h2 {
   padding: 2px 30px;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3);
 }
-#search input[type=submit]:hover {
-  background-color: #51a351;
+#search input[type="submit"]:hover {
+  background: #51a351;
+  border: none;
+  padding: 3px 31px;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3) inset, -1px -1px 1px rgba(0, 0, 0, 0.3) inset;
 }
 @media only screen and (max-width: 1000px) {
   #search {
@@ -615,6 +617,7 @@ ol span {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background: #FFF;
   max-width: 940px;
+  padding-bottom: 50px;
   width: auto;
 }
 #corps ol,
@@ -721,18 +724,38 @@ ol span {
 }
 /*--------------- INSCRIPTION ---------------*/
 #inscription {
-  text-align: center;
+  padding: 10px;
+}
+#inscription form {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  min-height: 350px;
+  padding: 20px;
+  padding-bottom: 60px;
+  position: relative;
+  width: 50%;
+}
+#inscription form h2 {
+  margin-bottom: 0.5em;
 }
 #inscription fieldset {
   border: none;
-  margin: 10px;
-  padding: 10px;
 }
 #inscription label {
+  background: #4d7222;
+  background: -moz-linear-gradient(top, #a0ca42 0%, #4d7222 100%);
+  background: -webkit-linear-gradient(top, #a0ca42 0%, #4d7222 100%);
+  background: -ms-radial-gradient(center top, #a0ca42 0%, #4d7222 100%);
+  background: -o-radial-gradient(center top, #a0ca42 0%, #4d7222 100%);
+  border: 1px #4D7222 solid;
+  border-radius: 5px 5px 0 0;
+  color: #FFF;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
   display: inline-block;
-  margin-right: 10px;
-  text-align: right;
-  width: 350px;
+  margin-top: 0.5em;
+  padding: 2px 10px;
 }
 #inscription legend {
   display: none;
@@ -747,7 +770,39 @@ ol span {
   margin-left: 410px;
 }
 #inscription input {
-  width: 300px;
+  background: #9fb371;
+  border: 1px #4D7222 solid;
+  border-radius: 0 3px 3px 3px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3) inset;
+  line-height: 30px;
+  margin-bottom: 0.5em;
+  padding: 0 10px;
+  width: 80%;
+}
+#inscription input[type="submit"] {
+  background: #51a351;
+  background: -moz-linear-gradient(top, #62c462 0%, #51a351 100%);
+  background: -webkit-linear-gradient(top, #62c462 0%, #51a351 100%);
+  background: -ms-radial-gradient(center top, #62c462 0%, #51a351 100%);
+  background: -o-radial-gradient(center top, #62c462 0%, #51a351 100%);
+  border-radius: 5px;
+  border: 1px #51a351 solid;
+  bottom: 0;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 0.3) inset, -1px -1px 1px rgba(0, 0, 0, 0.3) inset;
+  color: #FFF;
+  padding: 5px;
+  position: absolute;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3);
+  width: 78%;
+}
+#inscription input[type="submit"]:hover {
+  background: #51a351;
+  border: none;
+  padding: 6px;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3) inset, -1px -1px 1px rgba(0, 0, 0, 0.3) inset;
+}
+#inscription a {
+  color: #4D7222;
 }
 @media only screen and (max-width: 800px) {
   #inscription label {
@@ -1092,6 +1147,90 @@ section .panier:hover .prix {
   font-size: 12px;
   line-height: 33px;
   margin-left: 3px;
+}
+/*--------------- CATEGORIE -----------------*/
+#categorie {
+  width: auto;
+}
+#categorie #filtre {
+  background: #4d7222;
+  background: -moz-linear-gradient(top, #a0ca42 0%, #4d7222 100%);
+  background: -webkit-linear-gradient(top, #a0ca42 0%, #4d7222 100%);
+  background: -ms-radial-gradient(center top, #a0ca42 0%, #4d7222 100%);
+  background: -o-radial-gradient(center top, #a0ca42 0%, #4d7222 100%);
+  border: 1px #4d7222 solid;
+  border-bottom: 1px #364f18 solid;
+  color: #FFF;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+}
+#categorie #filtre input {
+  border: 1px #4d7222 solid;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3) inset;
+  display: inline;
+  padding-right: 10px;
+  text-align: right;
+  width: 50px;
+}
+#categorie #filtre span {
+  float: right;
+}
+#categorie .article {
+  background: #f2f2f2;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: inline-block;
+  min-width: 167px;
+  padding: 10px;
+  margin: auto 1% 20px;
+  position: relative;
+  width: 23%;
+}
+#categorie .article h4 a {
+  color: #000;
+  text-decoration: none;
+}
+#categorie .article h4 a:hover {
+  text-decoration: underline;
+}
+#categorie .article span[itemprop="description"] {
+  font-size: 12px;
+}
+#categorie .article .panier {
+  bottom: auto;
+  margin-top: 1em;
+  max-width: 80px;
+  position: relative;
+  right: auto;
+  width: auto;
+}
+#categorie .article .panier span {
+  left: 4px;
+  right: auto;
+}
+#categorie .article .panier span.ajouter {
+  right: 0;
+}
+#categorie .article .panier:hover .prix {
+  padding-right: 20px;
+}
+@media only screen and (max-width: 800px) {
+  #categorie .article {
+    width: 31.33%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #categorie .article {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #categorie .article {
+    width: 98%;
+  }
 }
 /*--------------- TABLEAU PANIER -------------------*/
 #panierTable {

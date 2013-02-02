@@ -276,19 +276,21 @@ html{
 
         input[type=submit]{
             .linear-gradient(rgb(98, 196, 98), rgb(81, 163, 81));
-            border: none;
-            box-shadow: 0 2px 5px rgba(0,0,0,.3), 1px 1px 3px rgba(255,255,255,.2) inset, -1px -1px 3px rgba(0,0,0,.2) inset;
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+            border: 1px rgb(81,163,81) solid;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5),
+            1px 1px 1px rgba(255,255,255,.3) inset, -1px -1px 1px rgba(0,0,0,.3) inset;
             border-radius: 3px;
             color: #FFF;
             height: 30px;
             margin-left: 10px;
             padding: 2px 30px;
             text-shadow: -1px -1px 1px rgba(0,0,0,.3);
-
-            &:hover{
-                background-color: rgb(81, 163, 81);
-            }
+        }
+        input[type="submit"]:hover{
+            background: rgb(81, 163, 81);
+            border:none;
+            padding: 3px 31px;
+            box-shadow: 1px 1px 1px rgba(255,255,255,.3) inset, -1px -1px 1px rgba(0,0,0,.3) inset;
         }
     }
 
@@ -664,6 +666,7 @@ html{
             box-shadow: 0 0 10px rgba(0,0,0,.5);
             background: #FFF;
             max-width: 940px;
+            padding-bottom:50px;
             width:auto;
         }
         #corps ol, #corps ul{
@@ -773,17 +776,35 @@ html{
 
 /*--------------- INSCRIPTION ---------------*/
     #inscription{
-        text-align:center;
+        padding: 10px;
+
+        form{
+            box-sizing:border-box;
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            display:inline-block;
+            min-height: 350px;
+            padding:20px;
+            padding-bottom:60px;
+            position: relative;
+            width:50%;
+
+            h2{
+                margin-bottom:0.5em;
+            }
+        }
         fieldset{
             border:none;
-            margin: 10px;
-            padding: 10px;
         }
         label{
+            .linear-gradient;
+            border:1px #4D7222 solid;
+            border-radius: 5px 5px 0 0;
+            color:#FFF;
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
             display: inline-block;
-            margin-right: 10px;
-            text-align: right;
-            width: 350px;
+            margin-top:0.5em;
+            padding:2px 10px;
         }
         legend{
             display:none;
@@ -797,7 +818,36 @@ html{
             margin-left: 410px;
         }
         input{
-            width:300px;
+            background: rgb(159, 179, 113);
+            border:1px #4D7222 solid;
+            border-radius: 0 3px 3px 3px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,.3) inset;
+            line-height:30px;
+            margin-bottom:0.5em;
+            padding:0 10px;
+            width:80%;
+        }
+        input[type="submit"]{
+            .linear-gradient(rgb(98, 196, 98), rgb(81, 163, 81));
+            border-radius:5px;
+            border: 1px rgb(81, 163, 81) solid;
+            bottom:0;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5),
+            1px 1px 1px rgba(255,255,255,.3) inset, -1px -1px 1px rgba(0,0,0,.3) inset;
+            color:#FFF;
+            padding:5px;
+            position: absolute;
+            text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3);
+            width:78%;
+        }
+        input[type="submit"]:hover{
+            background: rgb(81, 163, 81);
+            border:none;
+            padding:6px;
+            box-shadow: 1px 1px 1px rgba(255,255,255,.3) inset, -1px -1px 1px rgba(0,0,0,.3) inset;
+        }
+        a{
+            color: #4D7222;
         }
     }
 
@@ -1139,6 +1189,101 @@ html{
         margin-left: 3px;
     }
 
+/*--------------- CATEGORIE -----------------*/
+    #categorie{
+        width:auto;
+
+        #filtre{
+            .linear-gradient;
+            border: 1px rgb(77, 114, 34) solid;
+            border-bottom: 1px rgb(54, 79, 24) solid;
+            color:#FFF;
+            margin-bottom:10px;
+            padding:10px;
+            text-shadow: -1px -1px 0 rgba(0,0,0,.3);
+
+            input{
+                border: 1px rgb(77, 114, 34) solid;
+                box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3) inset;
+                display: inline;
+                padding-right: 10px;
+                text-align: right;
+                width: 50px;
+            }
+            span{
+                float:right;
+            }
+        }
+        .article{
+            background: #f2f2f2;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+            box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            -webkit-box-sizing:border-box;
+            display:inline-block;
+            min-width:167px;
+            padding:10px;
+            margin:auto 1% 20px;
+            position:relative;
+            width: 23%;
+
+            h4 a{
+                color:#000;
+                text-decoration:none;
+            }
+            h4 a:hover{
+                text-decoration:underline;
+            }
+            span[itemprop="description"]{
+                font-size:12px;
+            }
+            .panier{
+                bottom:auto;
+                margin-top:1em;
+                max-width:80px;
+                position:relative;
+                right:auto;
+                width:auto;
+
+                span{
+                    left:4px;
+                    right:auto;
+                }
+                span.ajouter{
+                    right:0;
+                }
+            }
+            .panier:hover{
+                .prix{
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width:800px){
+        #categorie{
+
+            .article{
+                width:31.33%;
+            }
+        }
+    }
+    @media only screen and (max-width:600px){
+        #categorie{
+
+            .article{
+                width:48%;
+            }
+        }
+    }
+    @media only screen and (max-width:400px){
+        #categorie{
+
+            .article{
+                width:98%;
+            }
+        }
+    }
 /*--------------- TABLEAU PANIER -------------------*/
     #panierTable{
         border: 1px #4D7222 solid;

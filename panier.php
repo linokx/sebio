@@ -40,7 +40,7 @@
                         <td>
                             <input name="Quantity" value="1"
                                  size="4" title="Champ de saisie de la quantité commandée"
-                                 type="number" />
+                                 type="number" min="1"/>
                         </td>
                         <td>
                             <img src="" alt="" />
@@ -55,7 +55,7 @@
                             <input type="hidden" name="LineItemID" value="17054102" />
                             <input name="Quantity" value="1"
                                  size="4" title="Champ de saisie de la quantité commandée"
-                                 type="number" />
+                                 type="number" min="1" />
                         </td>
                         <td>
                             <a href="?ObjectPath=/Shops/62035976/Products/%22OC%20-%20225%22">
