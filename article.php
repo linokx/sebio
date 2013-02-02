@@ -25,9 +25,6 @@
             <li>Soins du corps</li>
             <li>Soins pour Homme</li>
         </ul>
-
-<img src="#"/>
-<p>Déodorant en pierre d'Alun (Laboratoire Gravier)<br/>PROMO -25%</p>
     </div><section>
     <div id="ariane"><a href="#">Santé &amp; Hygiène</a> > <a href="#">Déodorants</a> > <a href="#">Pierre d'alun</a> > Déodorant en pierre d'Alun (Laboratoire Gravier) - 60gr</div>
         <h3>Déodorant en pierre d'Alun (Laboratoire Gravier) - 60gr</h3>

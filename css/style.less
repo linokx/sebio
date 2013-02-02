@@ -111,7 +111,7 @@ html *{
 }
 h1,h2,h3{
     margin: 0;
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
 }
 .full{
     width: 100%;
@@ -903,6 +903,9 @@ html{
 
 /*--------------- SECTION -----------------*/
     #corps>section{
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         background: #FFF;
         border-right: 1px rgba(255,255,255,.3) solid;
         border-left: 1px rgba(255,255,255,.3) solid;
@@ -911,34 +914,44 @@ html{
         padding: 20px;
         position: relative;
         vertical-align: top;
-        max-width: 748px;
+        max-width: 790px;
         z-index: 200;
     }
     article section{
-        display: inline-block;
-        margin-bottom: 50px;
-        width: 364px;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        display:inline-block;
+        margin:auto 1% 20px;
+        position:relative;
+        width: 48%;
     }
     article.articles{
+        background: #f2f2f2;
+        border: 1px rgb(77, 114, 34) solid;
+        box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
         color: black;
         display: block;
-        padding: 10px;
+        padding:10px;
         position: relative;
-        width: 360px;
+        width: auto;
     }
     section .articles+.articles{
-        margin-top: 38px;
+        margin-top: 12px;
     }
     article h3{
         color: black;
     }
     article section:nth-child(even){
-        margin-left: 20px;
+        -margin-left: 20px;
     }
     .articles, .identique{
         img{
             background: #FFF;
-            border: 2px rgb(0,128,1) solid;
+            border: 1px rgb(77, 114, 34) solid;
             box-shadow:0 0 8px rgba(0,0,0,.2);
             display: inline-block;
             float:left;
@@ -1022,12 +1035,12 @@ html{
     .important img{
         height: 220px;
         width: 100%;
+        margin-bottom:0.5em;
     }
     .important div{
         display: block;
         height: 80px;
         margin-left: 0;
-        margin-top: 10px;
         width: 340px;
     }
     .simple div{
@@ -1052,14 +1065,11 @@ html{
             max-width:none;
             width:48%;
         }
-        article section:nth-child(even){
-            margin-left: 4%;
-        }
         .articles div{
             overflow:hidden;
         }
         section .articles+.articles{
-            margin-top: 35px;
+            margin-top: 12px;
         }
     }
     @media only screen and (max-width: 870px){
@@ -1193,11 +1203,16 @@ html{
     #categorie{
         width:auto;
 
+        h2{
+            margin:1em 5px 0.8em;
+        }
+
         #filtre{
             .linear-gradient;
             border: 1px rgb(77, 114, 34) solid;
             border-bottom: 1px rgb(54, 79, 24) solid;
             color:#FFF;
+            margin:5px;
             margin-bottom:10px;
             padding:10px;
             text-shadow: -1px -1px 0 rgba(0,0,0,.3);
@@ -1216,12 +1231,12 @@ html{
         }
         .article{
             background: #f2f2f2;
+            border: 1px rgb(77, 114, 34) solid;
             box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
             box-sizing:border-box;
             -moz-box-sizing:border-box;
             -webkit-box-sizing:border-box;
             display:inline-block;
-            min-width:167px;
             padding:10px;
             margin:auto 1% 20px;
             position:relative;
@@ -1273,6 +1288,13 @@ html{
 
             .article{
                 width:48%;
+            }
+            #filtre{
+                span{
+                    display:block;
+                    float:none;
+                    margin-top:0.5em;
+                }
             }
         }
     }
@@ -1567,22 +1589,31 @@ html{
     footer{
         .linear-gradient;
         border-top: 1px #4D7222 solid;
+        color: #FFF;
         display:inline-block;
         left: 0;
         padding: 10px 0;
         position: absolute;
         text-align: center;
+        text-shadow: -1px -1px 0 rgba(0,0,0,.2);
         width: 100%;
         z-index: 500;
 
         a{
-            color: black;
+            color: #FFF;
             text-decoration: none;
             width:25%;
+        }
+        a:hover{
+            text-decoration: underline;
         }
     }
     @media only screen and (max-width:480px){
         footer{
+         a{
+            display:block;
+            width:auto;
+         }
         }
     }
 

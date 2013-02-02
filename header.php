@@ -25,7 +25,7 @@
         <!-- Add your site or application content here -->
         <div id="bandeau_header">
             <header><h1><a href="index.php"><img src="img/logoc.png"/>
-                <span>Sebio</span></a></h1>
+                <span>Retour à l'accueil</span></a></h1>
                 <h2>Produits naturels, bio et écologiques pour toute la famille</h2>
             </header>
             <form id="search">

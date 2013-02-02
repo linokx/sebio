@@ -23,10 +23,6 @@
             <li>Promotion</li>
             <li>Liquidation</li>
         </ul>
-        <h4>Produit au hasard</h4>
-        <img src="img/holle.jpg" alt="Produit Holle" />
-<p>Déodorant en pierre d'Alun (Laboratoire Gravier) - Sticker - PROMO - 25% (5,93 vs 7,9) (8,7 vs 11,6)
-5,93 € * </p>
 </div><section>
     <h3>Les nouveautés</h3>
     <article class="sections">
@@ -34,7 +30,7 @@
             <article class="articles important" itemscope itemtype="http://schema.org/Product">
                 <a href="article.php"><img itemprop="image" src="img/top.png" alt="Produit Stevia" width="340px" height="136px" /></a>
                 <div><h4 itemprop="name"><a href="article.php">Stevia</a></h4>
-                <span itemprop="description">Pour sucrer de manière naturelle et avec 0 kcal !<br/>Disponible en 3 formats.</span>
+                <span itemprop="description">Pour sucrer de manière naturelle et avec 0 kcal&nbsp;!</span>
                 
                 </div><a href="panier.php" class="panier">
                     <span itemprop="price" class="prix">26<span class="monnaie">€</span></span>
@@ -56,7 +52,7 @@
                 <div>
                 <a href="article.php"><img itemprop="image" src="img/holle.jpg" alt="Produit Holle" /></a>
                     <h4 itemprop="name"><a href="article.php">Attitude</a></h4>
-                    <span itemprop="description">Toute une gamme de produits de soin corporel: shampooings, conditionners, gels douche, savons main et une gamme pour enfant&nbsp;!</span>
+                    <span itemprop="description">Toute une gamme de produits de soin corporel: shampooings, conditionners, gels douche, savons main et une gamme&hellip;</span>
                 
                 </div><a href="panier.php" class="panier">
                     <span itemprop="price" class="prix">50<span class="monnaie">€</span></span>
@@ -72,7 +68,7 @@
                 <a href="article.php"><img itemprop="image" src="img/top.png" alt="Produit Attitude" width="340px" height="136px" /></a>
                 <div>
                     <h4 itemprop="name"><a href="article.php">Attitude</a></h4>
-                    <span itemprop="description">Nouveau: toute une gamme de produits de soin corporel: shampooings, conditionners, gels douche, savons main, &hellip;</span>
+                    <span itemprop="description">Nouveau: toute une gamme de produits de soin corporel&nbsp;: shampooings,&hellip;</span>
                 <a href="panier.php" class="panier">
                     <span itemprop="price" class="prix">12<span class="monnaie">€</span></span>
                     <span class="ajouter">Ajouter au panier</span>

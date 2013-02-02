@@ -1,5 +1,5 @@
-<footer><a href="#">Annonce légale</a> - <a href="cgv.php">Condition Générale de Vente</a> - <a href="#">Service client</a> - <a href="#">Notre entrepôt</a></footer>
-        </div><!--- Fin du corps -->
+  </div><!--- Fin du corps --><footer><a href="#">Annonce légale</a> - <a href="cgv.php">Condition Générale de Vente</a> - <a href="#">Service client</a> - <a href="#">Notre entrepôt</a></footer>
+      
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
