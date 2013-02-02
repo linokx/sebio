@@ -900,7 +900,6 @@ article section:nth-child(even) {
 .identique img {
   background: #FFF;
   border: 1px #4d7222 solid;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   display: inline-block;
   float: left;
   height: 136px;
@@ -916,6 +915,15 @@ article section:nth-child(even) {
   min-width: 180px;
   vertical-align: top;
   width: auto;
+}
+.articles,
+.identique {
+  background: #f2f2f2;
+  border: 1px #4d7222 solid;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 .articles h4,
 .identique h4 {
@@ -973,7 +981,8 @@ article.identique {
   display: inline-block;
   padding: 10px;
   position: relative;
-  width: 46%;
+  margin: 0 1%;
+  width: 48%;
 }
 .important {
   height: 340px;
@@ -1054,6 +1063,12 @@ article.identique {
   }
   article section:nth-child(even) {
     margin-left: 0;
+  }
+  article.identique {
+    width: 98%;
+  }
+  article.identique + .identique {
+    border-top: none;
   }
 }
 @media only screen and (max-width: 480px) {

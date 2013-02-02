@@ -952,7 +952,6 @@ html{
         img{
             background: #FFF;
             border: 1px rgb(77, 114, 34) solid;
-            box-shadow:0 0 8px rgba(0,0,0,.2);
             display: inline-block;
             float:left;
             height: 136px;
@@ -971,7 +970,12 @@ html{
         }
     }
     .articles,.identique{
-
+        background: #f2f2f2;
+        border: 1px rgb(77, 114, 34) solid;
+        box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
         h4{
             font-size: 16px;
             margin: 0;
@@ -1025,7 +1029,8 @@ html{
         display: inline-block;
         padding: 10px;
         position: relative;
-        width:46%;
+        margin: 0 1%;
+        width:48%;
     }
 
     .important{
@@ -1109,6 +1114,12 @@ html{
         }
         article section:nth-child(even){
             margin-left: 0;
+        }
+        article.identique{
+            width:98%;
+        }
+        article.identique+.identique{
+            border-top:none;
         }
     }
     @media only screen and (max-width: 480px){
